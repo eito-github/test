@@ -9,6 +9,8 @@ function App() {
 
   return (
     <>
+    
+    
       <section id="center">
         <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />
@@ -16,7 +18,9 @@ function App() {
           <img src={viteLogo} className="vite" alt="Vite logo" />
         </div>
         <div>
-          <h1>Get started</h1>
+          <h1 className='text-5xl text-blue-500'>Get started</h1>
+          
+          
           <p>
             Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
           </p>
