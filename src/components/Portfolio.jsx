@@ -7,8 +7,9 @@ const Portfolio = () => {
     const handleProjectClick = (index) => {
         setSelectedProject(PROJECTS[index]);
     };
-    
 
+
+    
     return (
         <section id="portfolio" className="py-24 bg-stone-50">
             <div className="container mx-auto max-w-4xl space-y-8">
