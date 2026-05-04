@@ -7,6 +7,7 @@ const Portfolio = () => {
     const handleProjectClick = (index) => {
         setSelectedProject(PROJECTS[index]);
     };
+    
 
     return (
         <section id="portfolio" className="py-24 bg-stone-50">
