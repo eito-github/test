@@ -59,4 +59,4 @@ export const SOCIAL = {
 
 
 export const BASE_URL =
-    import.meta.env.MODE === "production" ? "https://github.com/eito-github/test" : "";
+    import.meta.env.MODE === "production" ? "https://eito-github.github.io/test/" : "";
