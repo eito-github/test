@@ -28,3 +28,35 @@ export const PROJECTS = [
         githubUrl: "#",
     },
 ];
+
+// export const SOCIAL = {
+//     github: "#",
+//     twitter: "#",
+//     blog: "#",
+// };  
+
+
+// index.js (または constants.js)
+import { FaXTwitter, FaGithub, FaRegFileLines } from "react-icons/fa6";
+
+export const SOCIAL = {
+    github: {
+        href: "#",
+        Icon: FaGithub,
+        label: "GitHub"
+    },
+    twitter: {
+        href: "#",
+        Icon: FaXTwitter,
+        label: "Twitter"
+    },
+    blog: {
+        href: "#",
+        Icon: FaRegFileLines,
+        label: "Blog"
+    },
+};
+
+
+export const BASE_URL =
+    import.meta.env.MODE === "production" ? "https://github.com/eito-github/test" : "";

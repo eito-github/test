@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { PROJECTS } from "../constants";
+import { PROJECTS, BASE_URL } from "../constants"; // 追加
 
 const Portfolio = () => {
     const [selectedProject, setSelectedProject] = useState(PROJECTS[1]);
@@ -27,9 +27,9 @@ const Portfolio = () => {
                                 key={project.title}
                                 className={`${project.title === selectedProject.title &&
                                     "border-stone-400 bg-stone-100"
-                                    } " py-6 px-2 border border-stone-200 rounded-xl shadow-sm flex items-center space-x-2 "`}
+                                    } " py-6 px-2 border rounded-xl shadow-sm flex items-center space-x-2 "`}
                             >
-                                <div className="bg-white border border-stone-200 text-3xl h-16 w-16 rounded-full flex justify-center items-center">
+                                <div className="bg-white border text-3xl h-16 w-16 rounded-full flex justify-center items-center">
                                     {project.emoji}
                                 </div>
                                 <h3 className="text-lg font-medium text-stone-800">
@@ -42,7 +42,7 @@ const Portfolio = () => {
                     {/* プロジェクト詳細 */}
                     <div className="w-full col-span-2">
                         <img
-                            src={selectedProject.img}
+                            src={BASE_URL + selectedProject.img} // 追加
                             alt={selectedProject.title}
                             className="rounded-t-xl border border-stone-400 border-b-0 h-[380px] w-full object-cover"
                         />

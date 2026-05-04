@@ -1,10 +1,12 @@
+import { BASE_URL } from "../constants"; // 追加
+
 const About = () => {
     return (
         <section id="about" className="w-full bg-white">
             <div className="container mx-auto py-36 max-w-4xl flex items-center">
                 <div className="w-1/2">
                     <img
-                        src="/camp-coffee.jpg"
+                        src={`${BASE_URL}/camp-coffee.jpg`} // 追加
                         alt="Camp Coffee"
                         className="rounded-lg shadow-md"
                     />
